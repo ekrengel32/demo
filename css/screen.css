@@ -11,13 +11,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html{
   font-size: 1.125em;
   line-height: 22px;
-
-
   text-rendering: optimizeLegibility;
-  text-size-adjust: 100%
-  -moz-text-size-adjust: 100%
-  -webkit-text-size-adjust: 100%
-  -ms-text-size-adjust: 100%
+  text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  padding-top: 44px;
+  padding-bottom: 22px;
+  padding-left: 22px;
+
 
 }
 
@@ -29,6 +31,39 @@ li {
   padding-bottom: 11px;
 }
 
-ul,ol {
+ol,ul {
   padding-bottom: 11px;
+  color: red;
+}
+ol {
+  list-style-type: decimal;
+}
+ul {
+  list-style-type: square;
+}
+li > ul,
+li > ol {
+  padding-left: 22px;
+  padding-bottom: 0px;
+  padding-top: 11px;
+}
+
+li li:last-child {
+  padding-bottom: 0px;
+}
+
+/* Layout */
+#navigation {
+  position: absolute;
+  top: 0;
+}
+#navigation li {
+  display: inline-block;
+}
+/* Modular */
+nav ul{
+  list-style-type: none;
+}
+nav a {
+  text-decoration: none;
 }
