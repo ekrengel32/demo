@@ -8,6 +8,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 
+/* Base*/
+/*
+  Using an 18/22 base typographic setting, according to a 4 : 3 modular scale
+  http://www.modularscale.com/?18&px&1.333
+  */
+  
 html {
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222em; /* 22 / 18 = 1.222 */
@@ -26,13 +32,28 @@ body {
 h1,h2,h3,p {
   padding-bottom: 1.222em; /* 22 / 18 = 1.222 */
 }
+h1 {
+  color:#666;
+
+}
+h2 {
+  font-size: 1.777em; /* 31.984 / 18 = 1.777 */
+  line-height: 1.0318; /* 33 / 31.984 = 1.318 */
+  padding-bottom: 0.689; /* 22 / 31.984 = .689 */
+}
+
+h3 {
+  padding-top: 22px;
+  font-weight: bold;
+  padding: 11px;
+}
 
 li {
-  padding-bottom: .611em; /* 11 / 18 = .611 */
+  padding-bottom: 0.611em; /* 11 / 18 = .611 */
 }
 
 ol,ul {
-  padding-bottom: .611em; /* 11 / 18 = .611 */
+  padding-bottom: 0.611em; /* 11 / 18 = .611 */
   color: red;
 }
 ol {
@@ -45,7 +66,7 @@ li > ul,
 li > ol {
   padding-left: 1.222em; /* 22 / 18 = 1.222 */
   padding-bottom: 0;
-  padding-top: .611em; /* 11 / 18 = .611 */
+  padding-top: 0.611em; /* 11 / 18 = .611 */
 }
 
 li li:last-child {
@@ -69,8 +90,8 @@ nav ul{
 }
 nav a {
   display: block;
-  padding-top: .611em; /* 11 / 18 = .611 */
-  padding-bottom: .611em; /* 11 / 18 = .611 */
+  padding-top: 0.611em; /* 11 / 18 = .611 */
+  padding-bottom: 0.611em; /* 11 / 18 = .611 */
   background-color: orange;
   text-align: center;
   text-decoration: none;
